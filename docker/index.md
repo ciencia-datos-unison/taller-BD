@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Material sobre Docker y su uso
+title: Docker
 ---
 
 1. Presentación ¿Qué es *Docker* y cómo se usa?
