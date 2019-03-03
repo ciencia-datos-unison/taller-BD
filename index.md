@@ -27,7 +27,7 @@ recomendamos visitar (o actualizar si clonaste el proyecto directamente de
 ## Contenido
 
 1. [¿Qué es el *Big Data*?]()
-2. [Contenedores *Docker*](/docker/)
+2. [Contenedores *Docker*](docker/)
 3. [Libretas *Jupyter* para investigación reproducible]()
 4. [*Hadoop*, *Spark* y manejo de flujo de datos]()
 5. [*Tableau* y la importancia de presentar la información]()
