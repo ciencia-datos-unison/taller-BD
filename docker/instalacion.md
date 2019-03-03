@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Instalar y probar Docker
-description: 
+description: Guía breve
 ---
 
-## 1. Instalar la versión estable de Docker Community Edition (CE)
+## 1. Instalar la versión estable de Docker Community Edition
 
 Para instalar docker vas a requerir darte de alta. No te preocupes,
 solamente es para abrir un espacio donde puedas publicar y compartir
