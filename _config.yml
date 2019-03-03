@@ -5,4 +5,9 @@ author: Juan Pabo Soto y Julio Waissman
 
 show_downloads: false
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
 
