@@ -1,10 +1,10 @@
 ---
 layout: default
+title: Instalar y probar Docker
+description: 
 ---
 
-# Como instalar y probar Docker
-
-### 1. Instalar la versión estable de Docker Community Edition (CE)
+## 1. Instalar la versión estable de Docker Community Edition (CE)
 
 Para instalar docker vas a requerir darte de alta. No te preocupes,
 solamente es para abrir un espacio donde puedas publicar y compartir
@@ -30,7 +30,7 @@ instalación se hizo correctamente. Para esto hay que abrir la
 aplicación de terminal favorita que tengas (en Windows viene en el
 menú de docker).
 
-### 2. Probar la instalación de docker
+## 2. Probar la instalación de docker
 
 
 Vamos a preguntar primero por la versión de docker
