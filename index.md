@@ -1,5 +1,8 @@
-# [[site.title]]
-## {{site.description}}
+---
+layout: default
+title: site.title
+description: site.description
+---
 
 ## Instructores:
 
