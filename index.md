@@ -1,7 +1,7 @@
 ---
 layout: default
-title: site.title
-description: site.description
+title: Herramientas Computacionales para *Big Data*
+description: Material del taller
 ---
 
 ## Instructores:
