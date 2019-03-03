@@ -1,11 +1,13 @@
-# Taller **Herramientas computacionales para Big Data**
+---
+layout: default
+---
 
-Marzo, 2019
-
-**Instructores:**
+## Instructores:
 
 - [Juan Pablo Soto Barrera]()
 - [Julio Waissman Vilanova](http://mat.uson.mx/~juliowaissman/)
+
+## Objetivos
 
 El taller tiene como objetivo mostrar, instalar y comprender el uso básico de
 algunas de las herramientas computacionales utilizadas comúnmente para el manejo
@@ -23,7 +25,7 @@ recomendamos visitar (o actualizar si clonaste el proyecto directamente de
 ## Contenido
 
 1. [¿Qué es el *Big Data*?]()
-2. [Contenedores *Docker*]()
+2. [Contenedores *Docker*](/docker/)
 3. [Libretas *Jupyter* para investigación reproducible]()
 4. [*Hadoop*, *Spark* y manejo de flujo de datos]()
 5. [*Tableau* y la importancia de presentar la información]()
