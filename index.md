@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Herramientas Computacionales para *Big Data*
+title: Herramientas Computacionales para Big Data
 description: Material del taller
 ---
 
