@@ -117,3 +117,12 @@ Si no te deja borrar la imagen, entonces revisa si hay otros
 contenedores que dependan de la imagen. Cuando no queden contenedores
 ligados a la imagen, entonces la puedes borrar.
 
+## Si instalaste *docker* en MacOS o Windows...
+
+Es posible que algunas imágenes más complejas no se ejecuten por falta de memoria. Esto es debido a las limitaciones de 2Gb de memoria que impone docker por default a los contenedores en Windows y MacOS. También puede ser una causa de error si tu computadora tiene menos de 2Gb de RAM. En ambos casos, debes modificar el límite de uso de memoria. Aqui pongo las instrucciones para cada caso:
+
+1. Para Windows: [https://docs.docker.com/docker-for-windows/#advanced](https://docs.docker.com/docker-for-windows/#advanced)
+2. Para Mac OSX: [https://docs.docker.com/docker-for-mac/#advanced](https://docs.docker.com/docker-for-mac/#advanced)
+
+
+![](imagenes/docker-logo.png)
