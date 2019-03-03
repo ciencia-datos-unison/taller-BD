@@ -1,4 +1,5 @@
-# Descripción del taller
+# [[site.title]]
+## {{site.description}}
 
 ## Instructores:
 
