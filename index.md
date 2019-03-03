@@ -32,3 +32,5 @@ recomendamos visitar (o actualizar si clonaste el proyecto directamente de
 4. [*Hadoop*, *Spark* y manejo de flujo de datos]()
 5. [*Tableau* y la importancia de presentar la información]()
 6. [*Tensorflow* como método para calculo numérico escalable]()
+
+![](big-data.jpg)
