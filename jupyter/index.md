@@ -7,4 +7,4 @@ title: Jupyter
 
 1. [Presentación Introducción a *Jupyter*](slides/)
 2. [Imágenes *Docker* oficiales de *Jupyter*](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html)
-3. [Kernels disponobles](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)(otros que Python, R y Julia)
+3. [Kernels disponobles](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels) (otros que Python, R y Julia)
