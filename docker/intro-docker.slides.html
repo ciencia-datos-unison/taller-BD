@@ -13252,13 +13252,13 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#191;Que-vamos-a-ver?">&#191;Que vamos a ver?<a class="anchor-link" href="#&#191;Que-vamos-a-ver?">&#182;</a></h2><ol>
+<h2 id="&#191;Que-vamos-a-ver?">&#191;Que vamos a ver?<a class="anchor-link" href="#&#191;Que-vamos-a-ver?">&#182;</a></h2><ul>
 <li>¿Que es un contenedor?</li>
 <li>Aspectos generales de <em>Docker</em></li>
 <li>Instalación de <em>Docker CE</em></li>
 <li>Uso básico de la CLI</li>
 <li>Como hacer una imágen propia (Dockerfile)</li>
-</ol>
+</ul>
 
 </div>
 </div>
@@ -13274,7 +13274,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Motivaci&#243;n:-Aplicaciones-monol&#237;ticas">Motivaci&#243;n: Aplicaciones monol&#237;ticas<a class="anchor-link" href="#Motivaci&#243;n:-Aplicaciones-monol&#237;ticas">&#182;</a></h2><ol>
+<h2 id="Motivaci&#243;n:-Aplicaciones-monol&#237;ticas">Motivaci&#243;n: Aplicaciones monol&#237;ticas<a class="anchor-link" href="#Motivaci&#243;n:-Aplicaciones-monol&#237;ticas">&#182;</a></h2><ul>
 <li><p>Desarrollo lento</p>
 </li>
 <li><p>Desperdicio de recursos</p>
@@ -13283,7 +13283,7 @@ a.anchor-link {
 </li>
 <li><p>Escala mal, dificil de migrar</p>
 </li>
-</ol>
+</ul>
 
 </div>
 </div>
@@ -13317,13 +13317,13 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Contenedores-para-desarrollo/producci&#243;n">Contenedores para desarrollo/producci&#243;n<a class="anchor-link" href="#Contenedores-para-desarrollo/producci&#243;n">&#182;</a></h2><ol>
+<h2 id="Contenedores-para-desarrollo/producci&#243;n">Contenedores para desarrollo/producci&#243;n<a class="anchor-link" href="#Contenedores-para-desarrollo/producci&#243;n">&#182;</a></h2><ul>
 <li>Mismas dependencias para todos los desarrolladores</li>
 <li>Cada proyecto tiene sus propias dependencias</li>
 <li>Mismo comportamiento en desarrollo y en producción</li>
 <li>Se configura una vez</li>
 <li>Se aislan aplicaciones en producción </li>
-</ol>
+</ul>
 
 </div>
 </div>
@@ -13348,13 +13348,13 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Otros-componentes-de-Docker">Otros componentes de Docker<a class="anchor-link" href="#Otros-componentes-de-Docker">&#182;</a></h2><p><img src="imagenes/dapps.png" width="700"></p>
-<ol>
+<ul>
 <li>Dockerhub</li>
 <li>Docker machine</li>
 <li>Docker compose</li>
 <li>Docker swarm</li>
 <li>Docker stack</li>
-</ol>
+</ul>
 
 </div>
 </div>
@@ -13406,7 +13406,160 @@ $ docker run -it --rm --name mi_ubuntu ubuntu:latest
 </li>
 <li><p>Uso de al menos un editor en terminal (<code>vi</code>, <code>emacs</code>, <code>jed</code> o <code>nano</code>)</p>
 </li>
-<li><p>Saber que existen los ar</p>
+<li><p>Saber que existen los archivos ocultos <code>.XXXXXX</code> y de configuración <code>.XXXrc</code></p>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Utilizar-im&#225;genes-desarrolladas-por-otros">Utilizar im&#225;genes desarrolladas por otros<a class="anchor-link" href="#Utilizar-im&#225;genes-desarrolladas-por-otros">&#182;</a></h2><ul>
+<li><p>Desgargandolas de <a href="https://hub.docker.com/">dockerHub</a></p>
+<ul>
+<li><p>Buscandolas con google, bing, DuckDuckGo,...</p>
+</li>
+<li><p>Usando la linea de comando</p>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker search --help
+
+$ docker search XXXX
+</pre></div>
+<ul>
+<li>Una vez que se sabe cual es la imágen que nos interesa (y el <strong>tag</strong>), se rescarga con el comando</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker pull usuario/imagen:tag
+</pre></div>
+<ul>
+<li>Veamos ejemplos para <code>jupyter</code>, <code>spark</code>, <code>tensorflow</code>, <code>laravel</code>, ``,...</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Operaciones-en-im&#225;genes">Operaciones en im&#225;genes<a class="anchor-link" href="#Operaciones-en-im&#225;genes">&#182;</a></h2><div class="highlight"><pre><span></span>$ docker image --help
+</pre></div>
+<ul>
+<li>Listar</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker image ls
+$ docker image ls -a
+</pre></div>
+<ul>
+<li>Eliminar</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker image rm <span class="o">(</span>nombre o id<span class="o">)</span>
+</pre></div>
+<ul>
+<li>Renombrar</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker tag <span class="o">(</span>ImagenFuente<span class="o">)[</span>:tag<span class="o">]</span> <span class="o">(</span>ImagenDestino<span class="o">)[</span>:tag<span class="o">]</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Creando-contenedores">Creando contenedores<a class="anchor-link" href="#Creando-contenedores">&#182;</a></h2><div class="highlight"><pre><span></span>$ docker run --help
+</pre></div>
+<ul>
+<li>Ejemplos comunes</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker run -it --name <span class="o">(</span>nombre-contenedor<span class="o">)</span> <span class="o">(</span>nombre-imagen<span class="o">)</span>
+
+$ docker run -dt --name <span class="o">(</span>nombre-contenedor<span class="o">)</span> <span class="o">(</span>nombre-imagen<span class="o">)</span>
+
+$ docker run -it --rm --name <span class="o">(</span>nombre-contenedor<span class="o">)</span> <span class="o">(</span>nombre-imagen<span class="o">)</span>
+
+$ docker run -it -v out-dir:in-dir --name <span class="o">(</span>nombre-contenedor<span class="o">)</span> <span class="o">(</span>nombre-imagen<span class="o">)</span>
+
+$ docker run -it -p out-port:in-port --name <span class="o">(</span>nombre-contenedor<span class="o">)</span> <span class="o">(</span>nombre-imagen<span class="o">)</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Contenedores">Contenedores<a class="anchor-link" href="#Contenedores">&#182;</a></h2><ul>
+<li><p>Un contenedor se detiene saliendo de éste si está en modo <code>attach</code> (por default)</p>
+</li>
+<li><p>En Windows al parecer, no se detiene ni siquiera en modo <code>attach</code></p>
+</li>
+<li><p>Para detener un contenedor <code>detach</code>(o en Windows)</p>
+</li>
+</ul>
+
+<pre><code>$ docker stop (nombre-contenedor)</code></pre>
+<ul>
+<li>Para regresar a un contenedor detenido</li>
+</ul>
+
+<pre><code>$ docker start -ai (nombre-contenedor)</code></pre>
+<ul>
+<li>Para ejecutar un comando en un contenedor no detenido</li>
+</ul>
+
+<pre><code>$ docker exec -it (nombre-contenedor) (comando)</code></pre>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="M&#225;s-sobre-contenedores">M&#225;s sobre contenedores<a class="anchor-link" href="#M&#225;s-sobre-contenedores">&#182;</a></h2><ul>
+<li><p>Siempre hay que nombrar los contenedores (buena práctica)</p>
+</li>
+<li><p>Cada contenedor tiene su información encapsulada</p>
+</li>
+<li><p>Listar los contenedores</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker container ls -n <span class="m">5</span>
+</pre></div>
+<ul>
+<li>Eliminar un contenedor</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker container rm <span class="o">(</span>nombre o id<span class="o">)</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hagamos-un-ejemplo">Hagamos un ejemplo<a class="anchor-link" href="#Hagamos-un-ejemplo">&#182;</a></h2><ul>
+<li><p>[ ] Checar si tenemos la imágen <code>jupyter/scipy-notebook:latest</code></p>
+</li>
+<li><p>[ ] Si no la tenemos descargarla</p>
+</li>
+<li><p>[ ] Generar un contenedor con los siguientes requisitos:</p>
+<ul>
+<li>Habilitar el puerto 8888 en el puerto 8888 </li>
+<li>Montar una carpeta local en <code>/home/jovyan/work</code> </li>
+<li>Llamar al contenedor <code>taller-jupyter</code></li>
+</ul>
+</li>
+<li><p>[ ] Abrir jupyter en el navegador utilizando el <em>token</em> provisto</p>
+</li>
+<li><p>[ ] Generar un documento (sin importar como)</p>
+</li>
+<li><p>[ ] Salir del contenedor y asegurarse que se encuentra detenido</p>
+</li>
+<li><p>[ ] Regresar al contenedor y ver que el documento sigue existiendo</p>
 </li>
 </ul>
 
