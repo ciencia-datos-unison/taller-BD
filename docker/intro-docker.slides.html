@@ -13542,24 +13542,24 @@ $ docker run -it -p out-port:in-port --name <span class="o">(</span>nombre-conte
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Hagamos-un-ejemplo">Hagamos un ejemplo<a class="anchor-link" href="#Hagamos-un-ejemplo">&#182;</a></h2><ul>
-<li><p>[ ] Checar si tenemos la imágen <code>jupyter/scipy-notebook:latest</code></p>
+<li><p>Checar si tenemos la imágen <code>jupyter/scipy-notebook:latest</code></p>
 </li>
-<li><p>[ ] Si no la tenemos descargarla</p>
+<li><p>Si no la tenemos descargarla</p>
 </li>
-<li><p>[ ] Generar un contenedor con los siguientes requisitos:</p>
+<li><p>Generar un contenedor con los siguientes requisitos:</p>
 <ul>
 <li>Habilitar el puerto 8888 en el puerto 8888 </li>
 <li>Montar una carpeta local en <code>/home/jovyan/work</code> </li>
 <li>Llamar al contenedor <code>taller-jupyter</code></li>
 </ul>
 </li>
-<li><p>[ ] Abrir jupyter en el navegador utilizando el <em>token</em> provisto</p>
+<li><p>Abrir jupyter en el navegador utilizando el <em>token</em> provisto</p>
 </li>
-<li><p>[ ] Generar un documento (sin importar como)</p>
+<li><p>Generar un documento (sin importar como)</p>
 </li>
-<li><p>[ ] Salir del contenedor y asegurarse que se encuentra detenido</p>
+<li><p>Salir del contenedor y asegurarse que se encuentra detenido</p>
 </li>
-<li><p>[ ] Regresar al contenedor y ver que el documento sigue existiendo</p>
+<li><p>Regresar al contenedor y ver que el documento sigue existiendo</p>
 </li>
 </ul>
 
@@ -13580,6 +13580,77 @@ $ docker run -it -p out-port:in-port --name <span class="o">(</span>nombre-conte
 <div class="highlight"><pre><span></span>$ docker pull jupyter/tensorflow-notebook
 </pre></div>
 <p>¿Porqué estas descargas las hace más rápido?</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Im&#225;genes-propias-a-la-medida">Im&#225;genes propias a la medida<a class="anchor-link" href="#Im&#225;genes-propias-a-la-medida">&#182;</a></h2><ul>
+<li><p>Modificando un contenedor y convirtiendolo en imagen</p>
+</li>
+<li><p>Generando una imágen a partir de otra de base con un <code>Dockerfile</code></p>
+</li>
+</ul>
+<p><img src="imagenes/docker_thess.png" width="300"></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Imagen-a-partir-de-contenedor">Imagen a partir de contenedor<a class="anchor-link" href="#Imagen-a-partir-de-contenedor">&#182;</a></h2><ul>
+<li><p>Para contenedores que se desarrolla con root (superusuario)</p>
+</li>
+<li><p>No es la forma más elegante de generar una imágen</p>
+</li>
+<li><p>Un vez modificado un contenedor (incluyendo datos de usuario y archivos de configuración)</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker commit <span class="o">(</span>contenedor<span class="o">)</span> <span class="o">(</span>usuario/imagen<span class="o">)[</span>:tag<span class="o">]</span>
+</pre></div>
+<ul>
+<li>y para que alguien más la pueda usar:</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker push <span class="o">(</span>usuario/imagen<span class="o">)[</span>:tag<span class="o">]</span>
+</pre></div>
+<p>El usuario es el usuario de <em>dockerhub</em>.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Generando-una-imagen-con-Dockerfile">Generando una imagen con Dockerfile<a class="anchor-link" href="#Generando-una-imagen-con-Dockerfile">&#182;</a></h2><ul>
+<li><p>Script elegante y fácil de seguir</p>
+</li>
+<li><p>Se basa en una imagen anterior</p>
+</li>
+<li><p><a href="https://kapeli.com/cheat_sheets/Dockerfile.docset/Contents/Resources/Documents/index">Documentación sobre los comandos de Dockerfile</a></p>
+</li>
+<li><p>[Una guia para hacer Dockerfiles]</p>
+</li>
+<li><p>Una vez escrito el script en un archivo <code>Dockerfile</code>, y desde el directorio donde se encuentra</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker build -t <span class="o">(</span>usuario/imagen<span class="o">)[</span>:tag<span class="o">]</span> .
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Dos-ejemplos-de-Dockerfile">Dos ejemplos de Dockerfile<a class="anchor-link" href="#Dos-ejemplos-de-Dockerfile">&#182;</a></h2><ul>
+<li>Un servidor con <em>flask</em> (a partir del ejemplo del tutorial oficial)</li>
+</ul>
+<ul>
+<li>Una modificación a la imagen de <em>jupyter</em> </li>
+</ul>
 
 </div>
 </div>
