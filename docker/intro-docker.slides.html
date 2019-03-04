@@ -13641,16 +13641,52 @@ $ docker run -it -p out-port:in-port --name <span class="o">(</span>nombre-conte
 
 </div>
 </div>
-</div>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Dos-ejemplos-de-Dockerfile">Dos ejemplos de Dockerfile<a class="anchor-link" href="#Dos-ejemplos-de-Dockerfile">&#182;</a></h2><ul>
-<li>Un servidor con <em>flask</em> (a partir del ejemplo del tutorial oficial)</li>
-</ul>
+<li><p>Un servidor con <em>flask</em> (a partir del ejemplo del tutorial oficial)</p>
 <ul>
-<li>Una modificación a la imagen de <em>jupyter</em> </li>
+<li>Descarga el <a href="https://github.com/ciencia-datos-unison/taller-BD/raw/master/docker/dockerfiles/ejemplo1.zip">archivo comprimido</a></li>
+<li><p>Lee los archivos <code>Dockerfile</code>, <code>app.py</code> y <code>requirements.txt</code></p>
+</li>
+<li><p>En el directorio donde se encuentra <code>Dockerfile</code>:</p>
+</li>
 </ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker build -t flask-app .
+
+$ docker image ls
+
+$ docker run -p <span class="m">4000</span>:80 flask-app
+</pre></div>
+<ul>
+<li><p>Una modificación a la imagen de <em>jupyter</em></p>
+<ul>
+<li>Descarga el <a href="https://github.com/ciencia-datos-unison/taller-BD/raw/master/docker/dockerfiles/ejemplo2.zip">archivo comprimido</a></li>
+<li><p>Lee los archivos <code>Dockerfile</code> y <code>.vimrc</code></p>
+</li>
+<li><p>En el directorio donde se encuentra <code>Dockerfile</code>:</p>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker build -t usuario/jupyter-vim:ejemplo .
+
+$ docker image ls
+
+$ docker run -p <span class="m">8888</span>:8888 -v <span class="nv">$PWD</span>:/home/<span class="nv">$NB_USER</span>  --name tallerBD usuario/jupyter-vim:ejemplo
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#161;Pasemos-ahora-aver-como-funciona-Jupyter!">&#161;Pasemos ahora aver como funciona Jupyter!<a class="anchor-link" href="#&#161;Pasemos-ahora-aver-como-funciona-Jupyter!">&#182;</a></h1><p><img src="imagenes/docker-largo.png" alt=""></p>
 
 </div>
 </div>
