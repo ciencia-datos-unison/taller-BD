@@ -13500,18 +13500,18 @@ $ docker run -it -p out-port:in-port --name <span class="o">(</span>nombre-conte
 <li><p>Para detener un contenedor <code>detach</code>(o en Windows)</p>
 </li>
 </ul>
-
-<pre><code>$ docker stop (nombre-contenedor)</code></pre>
+<div class="highlight"><pre><span></span>$ docker stop <span class="o">(</span>nombre-contenedor<span class="o">)</span>
+</pre></div>
 <ul>
 <li>Para regresar a un contenedor detenido</li>
 </ul>
-
-<pre><code>$ docker start -ai (nombre-contenedor)</code></pre>
+<div class="highlight"><pre><span></span>$ docker start -ai <span class="o">(</span>nombre-contenedor<span class="o">)</span>
+</pre></div>
 <ul>
 <li>Para ejecutar un comando en un contenedor no detenido</li>
 </ul>
-
-<pre><code>$ docker exec -it (nombre-contenedor) (comando)</code></pre>
+<div class="highlight"><pre><span></span>$ docker <span class="nb">exec</span> -it <span class="o">(</span>nombre-contenedor<span class="o">)</span> <span class="o">(</span>comando<span class="o">)</span>
+</pre></div>
 
 </div>
 </div>
@@ -13562,6 +13562,24 @@ $ docker run -it -p out-port:in-port --name <span class="o">(</span>nombre-conte
 <li><p>[ ] Regresar al contenedor y ver que el documento sigue existiendo</p>
 </li>
 </ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Tarea-(para-agilizar-el-taller-ma&#241;ana-y-pasado)">Tarea (para agilizar el taller ma&#241;ana y pasado)<a class="anchor-link" href="#Tarea-(para-agilizar-el-taller-ma&#241;ana-y-pasado)">&#182;</a></h2><ul>
+<li>Descargar la imagen oficial de jupyter con spark</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker pull jupyter/pyspark-notebook
+</pre></div>
+<ul>
+<li>Descargar la imagen oficial de jupyter con tensorflow</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker pull jupyter/tensorflow-notebook
+</pre></div>
+<p>¿Porqué estas descargas las hace más rápido?</p>
 
 </div>
 </div>
