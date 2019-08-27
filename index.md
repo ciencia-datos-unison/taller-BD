@@ -29,7 +29,7 @@ recomendamos visitar (o actualizar si clonaste el proyecto directamente de
 1. [¿Qué es el *Big Data*?](intro.pdf)
 2. [Contenedores *Docker*](docker/)
 3. [Libretas *Jupyter* para investigación reproducible](jupyter/)
-4. [*Hadoop*, *Spark* y manejo de flujo de datos]()
+4. [*Spark* y manejo de flujo de datos](spark/)
 5. [*Tableau* y la importancia de presentar la información]()
 6. [*Tensorflow* como método para calculo numérico escalable]()
 
