@@ -5,5 +5,5 @@ title: Spark
 
 ![](spark.jpg)
 
-1. [Libreta de Jupyter de uso de Spark]()
-2. [Documentación a utilizar]()
+1. [Un tutorial sencillo](https://realpython.com/pyspark-intro/)
+2. [Libreta de un sistema de recomandación con pyspark](recommender_system.zip)
