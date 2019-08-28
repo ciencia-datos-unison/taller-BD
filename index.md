@@ -31,6 +31,6 @@ recomendamos visitar (o actualizar si clonaste el proyecto directamente de
 3. [Libretas *Jupyter* para investigación reproducible](jupyter/)
 4. [*Spark* y manejo de flujo de datos](spark/)
 5. [*Tableau* y la importancia de presentar la información]()
-6. [*Tensorflow* como método para calculo numérico escalable]()
+6. [*Tensorflow* como método para calculo numérico escalable](tensorflow/)
 
 ![](big-data.jpg)
